@@ -3,28 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishan Digra | Software Development Engineer</title>
     
-    <!-- SEO: Primary Meta Tags -->
-    <title>Ishan Digra | Software Development Engineer | Portfolio</title>
-    <meta name="description" content="Explore the portfolio of Ishan Digra, an experienced Software Development Engineer and IIT Delhi Alumnus, specializing in backend systems, Java, Spring Boot, and cloud technologies.">
-    <meta name="keywords" content="Ishan Digra, Software Development Engineer, SDE, Backend Developer, Java, Spring Boot, REST API, Microservices, Goldman Sachs, Jio Platforms, IIT Delhi, Portfolio">
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Portfolio of Ishan Digra, a Software Development Engineer specializing in backend systems, REST APIs, and cloud solutions.">
+    <meta name="keywords" content="Ishan Digra, Software Development Engineer, Backend Developer, Java, Spring Boot, REST API, Microservices, Jio Platforms">
     <meta name="author" content="Ishan Digra">
-    <link rel="canonical" href="https://ishandigra.github.io/"> <!-- SEO: Add your final domain here -->
-    <link rel="icon" href="Files/Yin_yang.svg" type="image/svg+xml">
-
-    <!-- SEO: Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ishandigra.github.io/"> <!-- SEO: Add your final domain here -->
-    <meta property="og:title" content="Ishan Digra | Software Development Engineer Portfolio">
-    <meta property="og:description" content="Portfolio of Ishan Digra, a Software Development Engineer specializing in backend systems, REST APIs, and cloud solutions.">
-    <meta property="og:image" content="https://ishandigra.github.io/Files/IshanDigra.png"> <!-- SEO: Use an absolute URL for the preview image -->
-
-    <!-- SEO: Twitter Card -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ishandigra.github.io/"> <!-- SEO: Add your final domain here -->
-    <meta property="twitter:title" content="Ishan Digra | Software Development Engineer Portfolio">
-    <meta property="twitter:description" content="Portfolio of Ishan Digra, a Software Development Engineer specializing in backend systems, REST APIs, and cloud solutions.">
-    <meta property="twitter:image" content="https://ishandigra.github.io/Files/IshanDigra.png"> <!-- SEO: Use an absolute URL for the preview image -->
 
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,39 +20,6 @@
     
     <!-- Devicon CDN for technology logos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-    <!-- SEO: JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ishan Digra",
-      "url": "https://ishandigra.github.io/",
-      "image": "https://ishandigra.github.io/Files/IshanDigra.png",
-      "jobTitle": "Software Development Engineer",
-      "worksFor": [
-        {
-          "@type": "Organization",
-          "name": "Goldman Sachs"
-        },
-        {
-          "@type": "Organization",
-          "name": "Jio Platforms Limited"
-        }
-      ],
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "Indian Institute of Technology, Delhi (IIT Delhi)"
-      },
-      "sameAs": [
-        "https://linkedin.com/in/ishandigra",
-        "https://github.com/IshanDigra",
-        "https://x.com/lifeofantman",
-        "https://leetcode.com/u/ishu_34/"
-      ],
-      "knowsAbout": ["Java", "Spring Boot", "Backend Development", "REST APIs", "Microservices", "Kubernetes", "Cloud Computing"]
-    }
-    </script>
 
     <script>
         // IIFE to prevent FOUC (Flash of Unstyled Content)
@@ -1010,12 +961,12 @@
 </head>
 <body>
     
-    <canvas id="starfield-canvas" aria-hidden="true"></canvas>
+    <canvas id="starfield-canvas"></canvas>
 
     <header class="header" id="header">
-        <nav class="navbar container" aria-label="Main navigation">
-            <a href="#home" class="nav-logo" aria-label="Homepage">
-                <img src="Files/Yin_yang.svg" alt="Yin Yang Icon Logo" class="nav-logo-img">
+        <nav class="navbar container">
+            <a href="#home" class="nav-logo">
+                <img src="Files/Yin_yang.svg" alt="Yin Yang Icon" class="nav-logo-img">
             </a>
             <div class="nav-right-group">
                 <ul class="nav-menu" id="nav-menu">
@@ -1026,52 +977,52 @@
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-                <button class="theme-toggle" id="theme-toggle" title="Toggle theme" aria-label="Toggle color theme">
-                    <i class="fas fa-moon" aria-hidden="true"></i>
-                    <i class="fas fa-sun" aria-hidden="true"></i>
+                <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
                 </button>
-                <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
-                    <i class="fas fa-bars" aria-hidden="true"></i>
-                </button>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="home" aria-labelledby="hero-heading">
+        <section id="home">
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
                         <p class="greeting">Hello, I'm</p>
-                        <h1 id="hero-heading">Ishan Digra</h1>
+                        <h1>Ishan Digra</h1>
                         <p class="tagline">Software Development Engineer | IIT Delhi Alumnus</p>
                         <p class="summary">
                             Having 2+ years of experience, currently at Goldman Sachs. I enjoy solving complex problems, optimizing systems, and creating solutions that improve everyday experiences for thousands of users. Beyond code, I’m always curious, learning, and exploring new ideas that make a real impact.
                         </p>
                         <div class="hero-buttons">
-                            <a href="Files/Ishan_CV_Main.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> View Resume
+                            <a href="Files/Ishan_CV_Main.pdf" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Resume
                             </a>
                             <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                         </div>
                     </div>
                     <div class="hero-image-container">
                         <div class="orbital-container" id="orbital-container">
-                            <div class="orbit orbit-1" aria-hidden="true"></div>
-                            <div class="orbit orbit-2" aria-hidden="true"></div>
-                            <div class="orbit orbit-3" aria-hidden="true"></div>
-                            <div class="satellite satellite-1" aria-hidden="true">
+                            <div class="orbit orbit-1"></div>
+                            <div class="orbit orbit-2"></div>
+                            <div class="orbit orbit-3"></div>
+                            <div class="satellite satellite-1">
                                 <i class="fas fa-code" style="font-size: 12px; color: var(--color-primary);"></i>
                             </div>
-                            <div class="satellite satellite-2" aria-hidden="true">
+                            <div class="satellite satellite-2">
                                 <i class="fas fa-rocket" style="font-size: 12px; color: var(--color-primary);"></i>
                             </div>
                             <!-- NEW: Floating debris objects -->
-                            <div class="floating-obj obj-1" aria-hidden="true"></div>
-                            <div class="floating-obj obj-2" aria-hidden="true"></div>
-                            <div class="floating-obj obj-3" aria-hidden="true"></div>
+                            <div class="floating-obj obj-1"></div>
+                            <div class="floating-obj obj-2"></div>
+                            <div class="floating-obj obj-3"></div>
                             <div class="hero-image-wrapper">
-                                <img src="Files/IshanDigra.png" alt="A professional headshot of Ishan Digra."
+                                <img src="Files/IshanDigra.png" alt="Ishan Digra Professional Headshot"
                                 onerror="this.onerror=null;this.src='https://placehold.co/350x350/1f2937/f9fafb?text=I.D.';">
                             </div>
                         </div>
@@ -1080,62 +1031,62 @@
             </div>
         </section>
 
-        <section id="about" class="fade-in" aria-labelledby="about-heading">
+        <section id="about" class="fade-in">
             <div class="container">
-                <h2 id="about-heading" class="section-heading">About Me</h2>
+                <h2 class="section-heading">About Me</h2>
                 <p class="section-subheading">A little bit about my background and professional journey.</p>
                 <div class="about-content">
-                    <img src="Files/aboutMe.jpg" alt="Ishan Digra working on a laptop in a casual setting." class="about-image"
+                    <img src="Files/aboutMe.jpg" alt="Ishan Digra at work" class="about-image"
                     onerror="this.onerror=null;this.src='https://placehold.co/350x350/1f2937/f9fafb?text=I.D.';">
                     <div class="about-text">
-                        <p style="text-align: justify;">I grew up in a small village near Pathankot, Punjab, where life was simple and the biggest traffic jam was usually cows on the road. From there, life took me to IIT Delhi - my second home, where I studied Electrical Engineering, and that’s where I found my love for coding.</p>
-                        <p style="text-align: justify;">Since then, I’ve been building and improving backend systems, first at Jio and now at Goldman Sachs. What I enjoy most is solving problems in a way that makes life easier for people using the products.</p>
-                        <p style="text-align: justify;">I find joy in traveling to new places, staying fit, and playing football. These passions remind me to stay curious, disciplined, and balanced — qualities I carry into everything I do. </p>
+                        <p style="text-align: justify;">I grew up in a small village near Pathankot, Punjab, where life was simple and the biggest traffic jam was usually cows on the road. From there, life took me to IIT Delhi my second home, where I studied Electrical Engineering, and that’s where I found my love for coding.</p>
+                        <p style="text-align: justify;">Since then, I’ve been building and improving backend systems, first at Jio and now at Goldman. What I enjoy most is solving problems in a way that makes life easier for people using the products.</p>
+                        <p style="text-align: justify;">When I’m not coding, I’m probably on a football field, sketching, or trying something new. For me, life’s about balance growing in my career, but also enjoying the little things that make it worth living.</p>
                         <p style="text-align: justify;">Always happy to connect and chat about tech, football, or just life in general.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="fade-in" aria-labelledby="skills-heading">
+        <section id="skills" class="fade-in">
             <div class="container">
-                <h2 id="skills-heading" class="section-heading">My Skills</h2>
+                <h2 class="section-heading">My Skills</h2>
                 <p class="section-subheading">A showcase of my technical abilities, tools, and professional competencies.</p>
                 <div class="skills-cluster-container">
-                    <div class="skills-grid" role="list">
-                        <div class="skill-card" role="listitem"><i class="devicon-html5-plain colored" aria-hidden="true"></i><span>HTML5</span></div>
-                        <div class="skill-card" role="listitem"><i class="devicon-css3-plain colored" aria-hidden="true"></i><span>CSS3</span></div>
-                        <div class="skill-card" role="listitem"><i class="devicon-java-plain colored" aria-hidden="true"></i><span>Java</span></div>
-                        <div class="skill-card" role="listitem"><i class="devicon-cplusplus-plain colored" aria-hidden="true"></i><span>C++</span></div>
-                        <div class="skill-card" role="listitem"><i class="devicon-python-plain colored" aria-hidden="true"></i><span>Python</span></div>
-                        <div class="skill-card" role="listitem"><i class="devicon-angularjs-plain colored" aria-hidden="true"></i><span>Angular</span></div>
-                        <div class="skill-card" role="listitem"><i class="devicon-spring-plain colored" aria-hidden="true"></i><span>Spring Boot</span></div>
-                        <div class="skill-card" role="listitem"><i class="devicon-apachekafka-original colored" aria-hidden="true"></i><span>Kafka</span></div>
-                        <div class="skill-card" role="listitem"><i class="devicon-kubernetes-plain colored" aria-hidden="true"></i><span>Kubernetes</span></div>
-                        <div class="skill-card" role="listitem"><i class="devicon-docker-plain colored" aria-hidden="true"></i><span>Docker</span></div>
-                         <div class="skill-card" role="listitem"><i class="devicon-oracle-original colored" aria-hidden="true"></i><span>Oracle SQL</span></div>
-                         <div class="skill-card" role="listitem"><i class="devicon-mongodb-plain-wordmark colored" aria-hidden="true"></i><span>MongoDB</span></div>
-                        <div class="skill-card" role="listitem"><i class="devicon-intellij-plain colored" aria-hidden="true"></i><span>IntelliJ IDEA</span></div>
-                        <div class="skill-card" role="listitem"><i class="devicon-git-plain colored" aria-hidden="true"></i><span>Git</span></div>
-                        <div class="skill-card" role="listitem"><i class="devicon-postman-plain colored" aria-hidden="true"></i><span>Postman</span></div>
-                        <div class="skill-card" role="listitem"><i class="devicon-azure-plain colored" aria-hidden="true"></i><span>Azure DevOps</span></div>
+                    <div class="skills-grid">
+                        <div class="skill-card"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                        <div class="skill-card"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                        <div class="skill-card"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                        <div class="skill-card"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+                        <div class="skill-card"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                        <div class="skill-card"><i class="devicon-angularjs-plain colored"></i><span>Angular</span></div>
+                        <div class="skill-card"><i class="devicon-spring-plain colored"></i><span>Spring Boot</span></div>
+                        <div class="skill-card"><i class="devicon-apachekafka-original colored"></i><span>Kafka</span></div>
+                        <div class="skill-card"><i class="devicon-kubernetes-plain colored"></i><span>Kubernetes</span></div>
+                        <div class="skill-card"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                         <div class="skill-card"><i class="devicon-oracle-original colored"></i><span>Oracle SQL</span></div>
+                         <div class="skill-card"><i class="devicon-mongodb-plain-wordmark colored"></i><span>MongoDB</span></div>
+                        <div class="skill-card"><i class="devicon-intellij-plain colored"></i><span>IntelliJ IDEA</span></div>
+                        <div class="skill-card"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                        <div class="skill-card"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+                        <div class="skill-card"><i class="devicon-azure-plain colored"></i><span>Azure DevOps</span></div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ================== EXPERIENCE (REVAMPED) ================== -->
-        <section id="experience" class="fade-in" aria-labelledby="experience-heading">
+        <section id="experience" class="fade-in">
             <div class="container">
-                <h2 id="experience-heading" class="section-heading">Work Experience</h2>
+                <h2 class="section-heading">Work Experience</h2>
                 <p class="section-subheading">My professional career timeline and key contributions.</p>
                 <div class="timeline-container">
                     
                     <div class="timeline-item current">
-                        <div class="timeline-card" tabindex="0">
+                        <div class="timeline-card">
                             <h3>Analyst</h3>
                             <p class="company">Goldman Sachs</p>
-                            <p class="duration"><time datetime="2025-08">August 2025</time> - Present</p>
+                            <p class="duration">August 2025 - Present</p>
                             <div class="details">
                                 <div class="details-content-wrapper">
                                     <ul>
@@ -1148,10 +1099,10 @@
                     </div>
 
                     <div class="timeline-item">
-                        <div class="timeline-card" tabindex="0">
+                        <div class="timeline-card">
                             <h3>Software Development Engineer</h3>
                             <p class="company">Jio Platforms Limited</p>
-                            <p class="duration"><time datetime="2023-08">August 2023</time> - <time datetime="2025-08">August 2025</time></p>
+                            <p class="duration">August 2023 - August 2025</p>
                             <div class="details">
                                 <div class="details-content-wrapper">
                                     <ul>
@@ -1169,10 +1120,10 @@
                     </div>
 
                     <div class="timeline-item">
-                        <div class="timeline-card" tabindex="0">
+                        <div class="timeline-card">
                             <h3>Software Engineer Intern</h3>
                             <p class="company">Huawei Technologies</p>
-                            <p class="duration"><time datetime="2022-06">June 2022</time> - <time datetime="2022-08">August 2022</time></p>
+                            <p class="duration">June 2022 - August 2022</p>
                             <div class="details">
                                 <div class="details-content-wrapper">
                                     <ul>
@@ -1190,10 +1141,10 @@
                     </div>
                     
                     <div class="timeline-item">
-                        <div class="timeline-card" tabindex="0">
+                        <div class="timeline-card">
                             <h3>Undergraduate Research Fellow</h3>
                             <p class="company">The University of Queensland</p>
-                            <p class="duration"><time datetime="2021-05">May 2021</time> - <time datetime="2021-08">Aug 2021</time></p>
+                            <p class="duration">May 2021 - Aug 2021</p>
                              <div class="details">
                                 <div class="details-content-wrapper">
                                     <ul>
@@ -1208,14 +1159,14 @@
             </div>
         </section>
 
-        <section id="projects" class="fade-in" aria-labelledby="projects-heading">
+        <section id="projects" class="fade-in">
             <div class="container">
-                <h2 id="projects-heading" class="section-heading">My Projects</h2>
+                <h2 class="section-heading">My Projects</h2>
                 <p class="section-subheading">A selection of projects that I've worked on.</p>
                 <div class="projects-grid">
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="https://placehold.co/600x400/374151/9ca3af?text=Course+Navigator" alt="A placeholder image for the Course Navigator project."
+                            <img src="https://placehold.co/600x400/374151/9ca3af?text=Course+Navigator" alt="Course Navigator Project Screenshot"
                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/475569?text=Project';">
                         </div>
                         <div class="project-content">
@@ -1225,14 +1176,14 @@
                                 <span>Java</span><span>OOP</span><span>Design Patterns</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe" aria-hidden="true"></i> Live Demo</a>
-                                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Source Code</a>
+                                <a href="#" target="_blank"><i class="fas fa-globe"></i> Live Demo</a>
+                                <a href="#" target="_blank"><i class="fab fa-github"></i> Source Code</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="https://placehold.co/600x400/374151/9ca3af?text=Social+Graph" alt="A placeholder image for the Social Graph project."
+                            <img src="https://placehold.co/600x400/374151/9ca3af?text=Social+Graph" alt="Social Graph Project Screenshot"
                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/475569?text=Project';">
                         </div>
                         <div class="project-content">
@@ -1242,14 +1193,14 @@
                                 <span>C++</span><span>DFS</span><span>Graph Theory</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe" aria-hidden="true"></i> Live Demo</a>
-                                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Source Code</a>
+                                <a href="#" target="_blank"><i class="fas fa-globe"></i> Live Demo</a>
+                                <a href="#" target="_blank"><i class="fab fa-github"></i> Source Code</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="https://placehold.co/600x400/374151/9ca3af?text=Memory+Allocator" alt="A placeholder image for the Dynamic Memory Allocator project."
+                            <img src="https://placehold.co/600x400/374151/9ca3af?text=Memory+Allocator" alt="Dynamic Memory Allocator Project Screenshot"
                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/475569?text=Project';">
                         </div>
                         <div class="project-content">
@@ -1259,8 +1210,8 @@
                                 <span>C++</span><span>Algorithms</span><span>Data Structures</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe" aria-hidden="true"></i> Live Demo</a>
-                                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Source Code</a>
+                                <a href="#" target="_blank"><i class="fas fa-globe"></i> Live Demo</a>
+                                <a href="#" target="_blank"><i class="fab fa-github"></i> Source Code</a>
                             </div>
                         </div>
                     </div>
@@ -1272,9 +1223,9 @@
         <!-- ================================================== -->
         <!-- === INTERACTIVE GLASSMORPHISM CONTACT SECTION === -->
         <!-- ================================================== -->
-        <section id="contact" aria-labelledby="contact-heading">
+        <section id="contact">
             <div class="container">
-                <h2 id="contact-heading" class="section-heading">Get In Touch</h2>
+                <h2 class="section-heading">Get In Touch</h2>
                 <p class="section-subheading">I'm currently open to new opportunities. Feel free to reach out!</p>
                 <div class="contact-wrapper">
                     <!-- Left Side: Contact Information -->
@@ -1282,18 +1233,18 @@
                         <h3>Let's Connect</h3>
                         <p>If you have any questions, collaboration ideas, or simply wish to connect, please feel free to reach out. I’ll be happy to respond at the earliest possible time.</p>
                         <ul class="contact-details">
-                            <li><i class="fas fa-envelope" aria-hidden="true"></i> digraishan.iitd@gmail.com</li>
-                            <li><i class="fas fa-phone" aria-hidden="true"></i> +91-8360063357</li>
-                            <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bangalore, India</li>
+                            <li><i class="fas fa-envelope"></i> digraishan.iitd@gmail.com</li>
+                            <li><i class="fas fa-phone"></i> +91-8360063357</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Bangalore, India</li>
                         </ul>
                         <div class="social-links">
-                            <a href="https://linkedin.com/in/ishandigra" target="_blank" class="linkedin" aria-label="LinkedIn Profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                            <a href="https://github.com/IshanDigra" target="_blank" class="github" aria-label="GitHub Profile"><i class="fab fa-github" aria-hidden="true"></i></a>
-                            <a href="https://x.com/lifeofantman" target="_blank" class="twitter" aria-label="Twitter Profile"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                            <a href="https://leetcode.com/u/ishu_34/" target="_blank" class="leetcode" aria-label="LeetCode Profile" style="display: flex; align-items: center;">
+                            <a href="https://linkedin.com/in/ishandigra" target="_blank" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/IshanDigra" target="_blank" class="github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://x.com/lifeofantman" target="_blank" class="twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://leetcode.com/u/ishu_34/" target="_blank" class="leetcode" aria-label="LeetCode" style="display: flex; align-items: center;">
                                 <img 
                                     src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" 
-                                    alt="LeetCode Icon" 
+                                    alt="LeetCode" 
                                     style="
                                         width:1.9rem; 
                                         height:1.9rem; 
@@ -1314,32 +1265,32 @@
                         <div class="form-group">
                             <input type="text" id="from_name" name="from_name" class="form-input" placeholder=" " required>
                             <label for="from_name" class="form-label">Your Name</label>
-                            <i class="fas fa-check-circle validation-icon success" aria-hidden="true"></i>
-                            <i class="fas fa-exclamation-circle validation-icon error" aria-hidden="true"></i>
+                            <i class="fas fa-check-circle validation-icon success"></i>
+                            <i class="fas fa-exclamation-circle validation-icon error"></i>
                         </div>
                         <div class="form-group">
                             <input type="email" id="from_email" name="from_email" class="form-input" placeholder=" " required>
                             <label for="from_email" class="form-label">Your Email</label>
-                            <i class="fas fa-check-circle validation-icon success" aria-hidden="true"></i>
-                            <i class="fas fa-exclamation-circle validation-icon error" aria-hidden="true"></i>
+                            <i class="fas fa-check-circle validation-icon success"></i>
+                            <i class="fas fa-exclamation-circle validation-icon error"></i>
                         </div>
                         <div class="form-group">
                             <input type="text" id="subject" name="subject" class="form-input" placeholder=" " required>
                             <label for="subject" class="form-label">Subject</label>
-                            <i class="fas fa-check-circle validation-icon success" aria-hidden="true"></i>
-                            <i class="fas fa-exclamation-circle validation-icon error" aria-hidden="true"></i>
+                            <i class="fas fa-check-circle validation-icon success"></i>
+                            <i class="fas fa-exclamation-circle validation-icon error"></i>
                         </div>
                         <div class="form-group">
                             <textarea id="message" name="message" class="form-input" placeholder=" " required></textarea>
                             <label for="message" class="form-label">Your Message</label>
-                            <i class="fas fa-check-circle validation-icon success" aria-hidden="true"></i>
-                            <i class="fas fa-exclamation-circle validation-icon error" aria-hidden="true"></i>
+                            <i class="fas fa-check-circle validation-icon success"></i>
+                            <i class="fas fa-exclamation-circle validation-icon error"></i>
                         </div>
                         <button type="submit" class="btn btn-primary" id="submit-btn">
                             <span class="btn-text">Send Message</span>
-                            <i class="fas fa-spinner spinner" aria-hidden="true"></i>
-                            <i class="fas fa-check success-icon" aria-hidden="true"></i>
-                            <i class="fas fa-times error-icon" aria-hidden="true"></i>
+                            <i class="fas fa-spinner spinner"></i>
+                            <i class="fas fa-check success-icon"></i>
+                            <i class="fas fa-times error-icon"></i>
                         </button>
                     </form>
                 </div>
@@ -1349,15 +1300,15 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Ishan Digra. All rights reserved.</p>
+            <p>&copy; 2024 Ishan Digra. All rights reserved.</p>
         </div>
     </footer>
 
-    <a href="#home" class="progress-wrap" id="progress-wrap" aria-label="Scroll back to top">
+    <div class="progress-wrap" id="progress-wrap">
         <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
         </svg>
-    </a>
+    </div>
     
     <div id="form-status-notification" role="alert" aria-live="assertive"></div>
 
@@ -1519,16 +1470,14 @@
             });
 
             hamburger.addEventListener('click', () => {
-                const isExpanded = navMenu.classList.toggle('active');
+                navMenu.classList.toggle('active');
                 hamburger.classList.toggle('active');
-                hamburger.setAttribute('aria-expanded', isExpanded);
             });
 
             navLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     navMenu.classList.remove('active');
                     hamburger.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
                 });
             });
 
@@ -1595,19 +1544,12 @@
             timelineItems.forEach(item => {
                 const card = item.querySelector('.timeline-card');
                 if (card) {
-                    const action = (e) => {
+                    card.addEventListener('click', (e) => {
                         e.stopPropagation();
                         const isExpanded = item.classList.contains('expanded');
                         timelineItems.forEach(otherItem => otherItem.classList.remove('expanded'));
                         if (!isExpanded) {
                             item.classList.add('expanded');
-                        }
-                    };
-                    card.addEventListener('click', action);
-                    card.addEventListener('keydown', (e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
-                            e.preventDefault();
-                            action(e);
                         }
                     });
                 }
